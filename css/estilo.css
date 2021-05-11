@@ -1,0 +1,69 @@
+.cabecera {
+}
+
+#contenedor-principal {
+}
+
+#barra-menu {
+  display: flex;
+  justify-content: center;
+  background-image: url(/media/shopbanner3.jpg);
+  font-family: 'Special Elite', cursive, bold;
+  font-size: 20px;
+  color: white;
+  padding: 1%;
+  border-radius: 10px;
+  border-style:double;
+  border-color: gray;
+}
+
+ul {
+  display: flex;
+  margin-right: 20%;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+#menu {
+  display: flex;
+  margin-right: 20%;
+}
+
+#contenedor-articulo{
+  display: flex;
+
+}
+
+#contenedor-modulo{
+  display: flex;
+  flex-direction: row-reverse;
+  background: rgb(160,78,45);
+  background: linear-gradient(315deg, rgba(160,78,45,1) 20%, rgba(160,132,45,1) 80%);
+}
+
+#contenedor-video{
+ 
+}
+
+#logo{
+  width: 90%;
+  height: 90%;
+}
+
+#medidas{
+  margin-top: 1%;
+  margin-left: 1%;
+  width: 90%;
+  height: 90%;
+  border-radius: 20px;
+  border-style:double;
+  border-color: gray;
+}
