@@ -6,20 +6,21 @@
 
 #barra-menu {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   background-image: url(/media/shopbanner3.jpg);
-  font-family: 'Special Elite', cursive, bold;
+  font-family: "Special Elite", cursive, bold;
   font-size: 20px;
   color: white;
   padding: 1%;
   border-radius: 10px;
-  border-style:double;
+  border-style: double;
   border-color: gray;
 }
 
 ul {
   display: flex;
-  margin-right: 20%;
+  margin-left: 1%;
 }
 
 a:link {
@@ -32,38 +33,119 @@ a:visited {
   color: white;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 #menu {
   display: flex;
-  margin-right: 20%;
+  justify-content: center;
+  font-family: "Special Elite", cursive, bold;
+  font-size: 20px;
+  background: rgb(160, 78, 45);
+  background: linear-gradient(
+    315deg,
+    rgba(160, 78, 45, 1) 20%,
+    rgba(160, 132, 45, 1) 80%
+  );
+  border-radius: 10px;
 }
 
-#contenedor-articulo{
+#bienvenidos {
   display: flex;
-
+  justify-content: center;
+  margin-bottom: -1%;
+  margin-top: -1%;
 }
 
-#contenedor-modulo{
+#contenedor-modulo {
   display: flex;
   flex-direction: row-reverse;
-  background: rgb(160,78,45);
-  background: linear-gradient(315deg, rgba(160,78,45,1) 20%, rgba(160,132,45,1) 80%);
+  /* background: rgb(160, 78, 45);
+  background: linear-gradient(
+    315deg,
+    rgba(160, 78, 45, 1) 20%,
+    rgba(160, 132, 45, 1) 80%
+  ); */
+  background-image: url(/media/granos.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 0.8%;
+  width: 100%;
+  border-radius: 10px;
 }
 
-#contenedor-video{
- 
+#contenedor-video {
 }
 
-#logo{
-  width: 90%;
-  height: 90%;
+#logo {
+  width: 60%;
+  height: 60%;
+  margin-top: 8%;
+  margin-left: 20%;
 }
 
-#medidas{
-  margin-top: 1%;
-  margin-left: 1%;
-  width: 90%;
-  height: 90%;
+#medidas {
+  margin-top: 8%;
+  margin-left: 12%;
+  width: 85%;
+  height: 80%;
   border-radius: 20px;
-  border-style:double;
+  border-style: double;
   border-color: gray;
+}
+
+#acerca-txt {
+  display: flex;
+}
+
+#contenedor-articulo {
+  display: flex;
+  background-image: url(/media/polvo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 1%;
+}
+
+p {
+  font-family: "Homemade Apple", cursive;
+  font-size: 18px;
+}
+
+#acerca-text {
+  width: 30%;
+  height: 5%;
+  margin-left: 5%;
+}
+
+#contenedor-articulo2 {
+}
+
+#container-modulo2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+#modulo1 {
+  display: flex;
+}
+
+#modulo2 {
+}
+
+#container-cuadros {
+  display: flex;
+}
+
+#modulo3 {
+  background-image: url(/media/taza-neon.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 200px;
+}
+
+#modulo4 {
 }
