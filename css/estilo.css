@@ -121,6 +121,18 @@ p {
 }
 
 #contenedor-articulo2 {
+  border-radius: 20px;
+  border-color: black;
+  border-style: double;
+  width: 100%;
+  margin-top: 2%;
+}
+
+#titulo-menu {
+  font-family: "Lemon", cursive;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
 }
 
 #container-modulo2 {
@@ -137,15 +149,65 @@ p {
 
 #container-cuadros {
   display: flex;
+  justify-content: space-evenly;
+  margin-bottom: -12%;
 }
 
 #modulo3 {
-  background-image: url(/media/taza-neon.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 50%;
-  height: 200px;
 }
 
 #modulo4 {
+}
+
+#vaso {
+  height: 70%;
+  margin-left: 20%;
+}
+
+#burger {
+  height: 70%;
+  width: 63%;
+  margin-left: 20%;
+}
+
+.div-imagen {
+  display: inline-block;
+  position: relative;
+}
+
+.div-imagen > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+  padding: 10px;
+  margin: 0;
+  margin-left: 40%;
+  margin-top: 200px;
+  font-family: "Titan One", cursive;
+  font-size: 30px;
+  color: black;
+}
+
+.desvanecer:hover {
+  opacity: 0.3;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+#modulo4 {
+}
+
+#menu-comer {
+}
+
+#contenedor-menu-comer {
+  background-image: url(/media/bg-textura.png);
+  background-size: cover;
+  background-repeat: repeat;
+  border-style: double;
+  border-color: black;
 }
