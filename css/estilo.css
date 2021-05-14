@@ -122,10 +122,11 @@ p {
 
 #contenedor-articulo2 {
   border-radius: 20px;
-  border-color: black;
-  border-style: double;
   width: 100%;
   margin-top: 2%;
+  background-image: url(/media/menu_largo.png);
+  background-size: 100% 83%;
+  background-repeat: no-repeat;
 }
 
 #titulo-menu {
@@ -150,7 +151,7 @@ p {
 #container-cuadros {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: -12%;
+  margin-bottom: -10%;
 }
 
 #modulo3 {
@@ -202,6 +203,9 @@ p {
 }
 
 #menu-comer {
+  background-image: url(/media/bg-textura.png);
+  background-size: cover;
+  background-repeat: repeat;
 }
 
 #contenedor-menu-comer {
@@ -210,4 +214,24 @@ p {
   background-repeat: repeat;
   border-style: double;
   border-color: black;
+}
+
+.titulo-menu {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lemon", cursive;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.comida {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tipo-cafe {
+}
+
+.precio {
 }
