@@ -202,32 +202,64 @@ p {
 #modulo4 {
 }
 
+.contenedor-modulo-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
 #menu-comer {
   background-image: url(/media/bg-textura.png);
   background-size: cover;
   background-repeat: repeat;
+  padding: 2%;
 }
 
-#contenedor-menu-comer {
+.contenedor-mosaico {
+  display: flex;
+  justify-content: center;
+}
+
+#mosaico {
+  width: 28%;
+  height: 28%;
+  margin-top: 1%;
+}
+
+.contenedor-menu-comer {
   background-image: url(/media/bg-textura.png);
   background-size: cover;
   background-repeat: repeat;
   border-style: double;
   border-color: black;
+  width: 40%;
 }
 
 .titulo-menu {
   display: flex;
   flex-direction: column;
-  font-family: "Lemon", cursive;
-  display: flex;
   justify-content: center;
-  font-size: 30px;
+  font-family: "Lemon", cursive;
+  font-size: 25px;
+  margin-top: -2%;
+  margin-bottom: -2%;
+}
+
+.contenedor-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 0.5%;
 }
 
 .comida {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  font-family: "Lemon", cursive;
+  font-size: 11px;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 .tipo-cafe {
