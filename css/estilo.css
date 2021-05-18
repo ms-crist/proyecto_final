@@ -40,7 +40,7 @@ a:hover {
 #menu {
   display: flex;
   justify-content: center;
-  font-family: "Special Elite", cursive, bold;
+  font-family: "Lemon", cursive;
   font-size: 20px;
   background: rgb(160, 78, 45);
   background: linear-gradient(
@@ -112,6 +112,11 @@ a:hover {
 p {
   font-family: "Homemade Apple", cursive;
   font-size: 18px;
+}
+
+#titulo-acerca {
+  font-family: "Lemon", cursive;
+  font-size: 20px;
 }
 
 #acerca-text {
@@ -222,9 +227,17 @@ p {
 }
 
 #mosaico {
-  width: 28%;
-  height: 28%;
-  margin-top: 1%;
+  width: 50%;
+  height: 85%;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+
+#mosaico2 {
+  width: 47%;
+  height: 85%;
+  margin-top: 2%;
+  margin-left: 5%;
 }
 
 .contenedor-menu-comer {
@@ -251,6 +264,7 @@ p {
   flex-direction: row;
   justify-content: space-around;
   margin-bottom: 0.5%;
+  margin-right: 5%;
 }
 
 .comida {
@@ -266,4 +280,89 @@ p {
 }
 
 .precio {
+}
+
+#contenedor-titulo {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  flex-direction: column;
+  background-color: antiquewhite;
+}
+
+#contenedor-titulo:nth-child(1) {
+}
+
+.titulo-menu {
+  margin-left: 8%;
+}
+
+.titulo-menu:nth-child(3) {
+  margin-top: -10%;
+}
+
+#contenedor-articulo3 {
+  background-color: antiquewhite;
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 4%;
+}
+
+.contenedor-ubicacion {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
+  margin-left: 5%;
+  width: 80%;
+}
+
+.contenedor-modulo-ub {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#contenedor-img {
+  margin-left: 1%;
+}
+
+#local-img {
+  width: 50%;
+  height: 50%;
+}
+
+.ubicacion {
+  width: 80%;
+  height: 27%;
+  background-color: peru;
+  font-family: "Lobster", cursive;
+  font-size: 25px;
+  color: wheat;
+  margin-right: 1%;
+  margin-top: 1%;
+  margin-left: 1%;
+  display: flex;
+  justify-content: center;
+}
+
+.ubicacion:nth-child(2) {
+  margin-top: 3%;
+  margin-bottom: 1%;
+}
+
+h3 {
+  margin-left: 6%;
+}
+
+#contenedor-modulos {
+  display: flex;
+  margin-left: 1%;
+  margin-right: 10%;
+  flex-direction: row;
+}
+
+.horario {
+  font-family: "Lemon", cursive;
 }
