@@ -9,13 +9,12 @@
   flex-direction: column;
   justify-content: center;
   background-image: url(/media/shopbanner3.jpg);
-  font-family: "Special Elite", cursive, bold;
+  font-family: "Lemon", cursive;
   font-size: 20px;
   color: white;
   padding: 1%;
   border-radius: 10px;
-  border-style: double;
-  border-color: gray;
+  margin-bottom: 0.1%;
 }
 
 ul {
@@ -42,13 +41,18 @@ a:hover {
   justify-content: center;
   font-family: "Lemon", cursive;
   font-size: 20px;
-  background: rgb(160, 78, 45);
+  /* background: rgb(160, 78, 45);
   background: linear-gradient(
     315deg,
     rgba(160, 78, 45, 1) 20%,
     rgba(160, 132, 45, 1) 80%
-  );
+  ); */
+  background-color: peru;
   border-radius: 10px;
+  border: black;
+  border-width: 1px;
+  border-style: solid;
+  margin-bottom: 0.1%;
 }
 
 #bienvenidos {
@@ -70,7 +74,7 @@ a:hover {
   background-image: url(/media/granos.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 0.8%;
+  margin-bottom: 0.7%;
   width: 100%;
   border-radius: 10px;
 }
@@ -168,12 +172,16 @@ p {
 #vaso {
   height: 70%;
   margin-left: 20%;
+  border: black;
+  border-style: double;
 }
 
 #burger {
   height: 70%;
   width: 63%;
   margin-left: 20%;
+  border: black;
+  border-style: double;
 }
 
 .div-imagen {
@@ -345,6 +353,9 @@ p {
   margin-left: 1%;
   display: flex;
   justify-content: center;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
 }
 
 .ubicacion:nth-child(2) {
@@ -364,5 +375,185 @@ h3 {
 }
 
 .horario {
+  font-family: "Lemon", cursive;
+}
+
+#contenedor-contact {
+  display: flex;
+  width: 70%;
+  height: 70%;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 1%;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+.titulo-contact {
+  font-family: "Lemon", cursive;
+  font-size: 30px;
+  margin-left: 50%;
+}
+
+#form {
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  padding: 1%;
+  background-color: peru;
+  border-radius: 30px;
+  margin-bottom: 15%;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#container-titulo {
+  display: flex;
+  justify-content: center;
+}
+
+#titulo {
+  font-family: "Lemon", cursive;
+  font-size: 23px;
+  font-weight: bold;
+  color: wheat;
+}
+
+#miFormulario {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 5%;
+}
+
+input::placeholder {
+  color: peru;
+}
+
+#campo_direccion::placeholder {
+  color: peru;
+}
+
+#campo_nombre,
+#boton,
+#campo_direccion,
+#campo_texto,
+#campo-mensaje,
+#campo_correo,
+#campo_telefono {
+  border-width: 3px;
+  border-radius: 5px;
+  width: 98%;
+  font-family: "Lemon", cursive;
+  font-size: 17px;
+  background-color: wheat;
+  color: peru;
+}
+
+#nombre {
+  display: flex;
+  margin-bottom: 1%;
+  font-size: 12px;
+  margin-left: 5%;
+  color: black;
+}
+
+#apellidos {
+  display: flex;
+  flex-direction: row;
+  margin-top: -1%;
+  color: black;
+}
+
+#email-tel {
+  display: flex;
+  flex-direction: row;
+  margin-top: -1%;
+  margin-bottom: -2.5%;
+  color: black;
+  font-family: "Lemon", cursive;
+  font-size: 1px;
+}
+
+#direccion {
+  display: flex;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  color: black;
+}
+
+#mensajes {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  justify-content: space-between;
+  margin-bottom: 1%;
+}
+
+#mensajes2 {
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  margin-bottom: 1%;
+  margin-top: -3%;
+}
+
+#mensajes3 {
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+  margin-bottom: 1%;
+  margin-top: -6%;
+}
+
+#mensaje {
+  display: flex;
+  font-size: 12px;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+#mensajes-ap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-top: -2%;
+}
+
+#campo_correo {
+  margin-right: 5%;
+  border-width: 3px;
+  border-radius: 5px;
+  width: 50%;
+  font-size: 20px;
+  color: peru;
+}
+
+#campo_telefono {
+  width: 50%;
+  border-width: 3px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: peru;
+}
+
+#container-term {
+  display: flex;
+  flex-direction: row;
+  font-family: "Lemon", cursive;
+  justify-content: space-between;
+  font-size: 9px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#boton {
+  background-color: wheat;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: -5%;
+  color: peru;
   font-family: "Lemon", cursive;
 }

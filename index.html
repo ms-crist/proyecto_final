@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenido a Matius Coffee</title>
     <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="stylesheet" href="/css/formulario.css">
+    <script src="/js/objeto.js"></script>
+    <script src="/js/validacion.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -25,7 +28,7 @@
             <div id="contenedor-principal">
                 <div id="barra-menu">
                     <div id="bienvenidos">
-                        <h1>Bienvenidos a Matiu's Coffee la mejor experiencia en café</h1>
+                        <h1>Matiu's Coffee</h1>
                     </div>
 
                 </div>
@@ -124,13 +127,15 @@
                 <div class="contenedor-ubicacion">
                     <div class="ubicacion">
                         <img id="mosaico" src="/media/mosaico.jpg" alt="">
-                        <h3>Sucursal 1 <br>
-                            Providencia 5678, Providencia, Santiago
+                        <h3> <br> Sucursal 1 <br>
+                            Providencia 5678, Providencia, Santiago <br>
+                            <!--  Horario de Atención: <br> LU- VI- 8:00 AM - 9 PM
+                            SA - DO- 11:00 AM- 11:00 PM -->
                         </h3>
                     </div>
                     <div class="ubicacion">
                         <img id="mosaico2" src="/media/mosaico2.jpg" alt="">
-                        <h3>Sucursal 2 <br>
+                        <h3><br> Sucursal 2 <br>
                             Apoquindo 6170, Las Condes, Santiago
                         </h3>
                     </div>
@@ -142,7 +147,70 @@
 
             <!--  </div> -->
         </article>
+        <article id="articulo-contacto">
+            <div id="contenedor-contact">
+                <div class="titulo-contact">
+                    <h1>Contacto</h1>
+                </div>
+                <div id="form">
+                    <div id="container-titulo">
+                        <h1 id="titulo">Formulario de contacto</h1>
+                    </div>
+                    <div id="nombre">
+                        <p id="msgNombre"></p>
+                    </div>
+                    <form name="miFormulario" id="miFormulario">
+                        <input id="campo_nombre" type="text" name="nombre" placeholder="Ingrese su nombre y apellido"
+                            required multiple onchange="ValidaNombre()"><br>
 
+                        <!--  <div id="apellidos">
+                            <input id="campo_apellido_paterno" type="text" name="apellido"
+                                placeholder="Apellido Paterno" required multiple onchange="ValidaApellido()">
+
+
+                            <input id="campo_apellido_materno" type="text" name="apellido2"
+                                placeholder="Apellido Materno" required multiple onchange="ValidaApellido2()"><br>
+
+
+                        </div>
+                        <div id="mensajes-ap">
+                            <p id="msgApellido"></p>
+                            <p id="msgApellido1"></p>
+                        </div> -->
+                        <div id="email-tel">
+                            <input id="campo_correo" type="email" placeholder="Email" required
+                                onchange="Validacorreo()"><br>
+
+                            <input id="campo_telefono" type="tel" placeholder="Teléfono" required
+                                onchange="Validatel()"><br>
+                        </div>
+                        <div id="mensajes">
+                            <p id="msgCorreo"></p>
+                            <p id="msgTel"></p>
+                        </div>
+                        <div id="direccion">
+                            <input name="texto" id="campo_direccion" placeholder="Ingrese su dirección completa"
+                                onchange="ValidaTexto()"><br>
+                        </div>
+                        <div id="mensajes2">
+                            <p id="msgText"></p>
+                        </div>
+                        <div id="mensaje">
+                            <textarea name="texto" id="campo-mensaje" cols="30" rows="5"
+                                placeholder="Escriba un mensaje" onchange="ValidaTexto()"></textarea>
+                        </div>
+                        <div id="mensajes3">
+                            <p id="msgText2"></p>
+                        </div>
+                        <div id="container-term">
+                            <h1>Terminos y condiciones</h1>
+                            <h1>Politicas de privacidad</h1>
+                        </div>
+                        <button onclick="button(), agregadatos()" type="button" id="boton">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </article>
         <aside>
 
         </aside>
