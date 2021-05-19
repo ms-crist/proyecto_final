@@ -431,6 +431,14 @@ input::placeholder {
   color: peru;
 }
 
+textarea::placeholder {
+  color: peru;
+}
+
+textarea {
+  border-color: gray;
+}
+
 #campo_direccion::placeholder {
   color: peru;
 }
@@ -443,6 +451,7 @@ input::placeholder {
 #campo_correo,
 #campo_telefono {
   border-width: 3px;
+  border-color: wheat;
   border-radius: 5px;
   width: 98%;
   font-family: "Lemon", cursive;
@@ -543,6 +552,7 @@ input::placeholder {
   display: flex;
   flex-direction: row;
   font-family: "Lemon", cursive;
+  color: wheat;
   justify-content: space-between;
   font-size: 9px;
   font-weight: bold;

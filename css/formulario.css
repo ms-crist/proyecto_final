@@ -1,9 +1,13 @@
 .error {
-  color: red;
+  color: firebrick;
   font-size: 12px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .exito {
-  color: green;
-  font-size: 15px;
+  color: wheat;
+  font-size: 12px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }

@@ -83,13 +83,28 @@ function ValidaTexto(){
     var mensaje = document.getElementById("msgText");
 
     if(campo.length < 5){
-        mensaje.innerText = "El mensaje debe tener al menos 5 caracteres";
+        mensaje.innerText = "La dirección debe tener al menos 5 caracteres";
         mensaje.classList.remove("exito");
         mensaje.classList.add("error");
     }else{
-        mensaje.innerText = "El mensaje es correcto.";
+        mensaje.innerText = "La dirección es correcta.";
         mensaje.classList.remove("error");
         mensaje.classList.add("exito");
     }
 }
 
+
+function ValidaMsje(){
+    var campo = document.getElementById("campo-mensaje").value;
+    var mensaje = document.getElementById("msgText2");
+
+    if(campo.length < 5){
+        mensaje.innerText = "El mensaje debe tener al menos 5 caracteres";
+        mensaje.classList.remove("exito");
+        mensaje.classList.add("error");
+    }else{
+        mensaje.innerText = "El mensaje es correcto";
+        mensaje.classList.remove("error");
+        mensaje.classList.add("exito");
+    }
+}
