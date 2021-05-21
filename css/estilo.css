@@ -380,25 +380,23 @@ h3 {
 
 #contenedor-contact {
   display: flex;
-  width: 70%;
-  height: 70%;
-  justify-content: center;
-  align-items: flex-start;
+  width: 100%;
   margin-left: 1%;
   border-radius: 10px;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .titulo-contact {
   font-family: "Lemon", cursive;
   font-size: 30px;
-  margin-left: 50%;
+  margin-left: 40%;
 }
 
 #form {
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 70%;
   height: 100%;
   padding: 1%;
   background-color: peru;
@@ -406,6 +404,7 @@ h3 {
   margin-bottom: 15%;
   border-style: solid;
   border-width: 1px;
+  margin-left: 0.5%;
 }
 
 #container-titulo {
@@ -447,7 +446,7 @@ textarea {
 #boton,
 #campo_direccion,
 #campo_texto,
-#campo-mensaje,
+#campo_mensaje,
 #campo_correo,
 #campo_telefono {
   border-width: 3px;
@@ -462,17 +461,8 @@ textarea {
 
 #nombre {
   display: flex;
-  margin-bottom: 1%;
+  margin-top: -6%;
   font-size: 12px;
-  margin-left: 5%;
-  color: black;
-}
-
-#apellidos {
-  display: flex;
-  flex-direction: row;
-  margin-top: -1%;
-  color: black;
 }
 
 #email-tel {
@@ -480,7 +470,6 @@ textarea {
   flex-direction: row;
   margin-top: -1%;
   margin-bottom: -2.5%;
-  color: black;
   font-family: "Lemon", cursive;
   font-size: 1px;
 }
@@ -489,7 +478,6 @@ textarea {
   display: flex;
   margin-top: 1%;
   margin-bottom: 1%;
-  color: black;
 }
 
 #mensajes {
@@ -511,9 +499,8 @@ textarea {
 #mensajes3 {
   display: flex;
   font-size: 12px;
-  justify-content: space-between;
   margin-bottom: 1%;
-  margin-top: -6%;
+  margin-top: -3%;
 }
 
 #mensaje {
@@ -566,4 +553,21 @@ textarea {
   margin-top: -5%;
   color: peru;
   font-family: "Lemon", cursive;
+}
+
+.redes {
+  width: 80%;
+  height: 27%;
+  background-color: peru;
+  font-family: "Lobster", cursive;
+  font-size: 25px;
+  color: wheat;
+  margin-right: 1%;
+  margin-top: 1%;
+  margin-left: 1%;
+  display: flex;
+  justify-content: center;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
 }
