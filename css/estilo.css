@@ -381,9 +381,9 @@ h3 {
 #contenedor-contact {
   display: flex;
   width: 100%;
-  margin-left: 1%;
+  margin-left: 0.2%;
   border-radius: 10px;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-between;
 }
 
@@ -457,12 +457,13 @@ textarea {
   font-size: 17px;
   background-color: wheat;
   color: peru;
+  padding: 1%;
 }
 
 #nombre {
   display: flex;
   margin-top: -6%;
-  font-size: 12px;
+  margin-bottom: 3%;
 }
 
 #email-tel {
@@ -555,19 +556,43 @@ textarea {
   font-family: "Lemon", cursive;
 }
 
+#contenedor-redes {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+}
+
+#titulo-redes {
+  margin-bottom: -6%;
+  margin-left: -4%;
+}
+
 .redes {
   width: 80%;
   height: 27%;
-  background-color: peru;
+  background-color: wheat;
   font-family: "Lobster", cursive;
   font-size: 25px;
-  color: wheat;
+  color: peru;
   margin-right: 1%;
   margin-top: 1%;
   margin-left: 1%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   border-color: black;
   border-style: solid;
   border-width: 1px;
+}
+
+#facebook,
+#twitter,
+#insta {
+  padding: 2%;
+}
+
+.ubicacion:hover {
+  background-color: goldenrod;
+  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.02);
+  transform: scale(0.9);
 }
