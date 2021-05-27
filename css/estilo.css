@@ -8,12 +8,19 @@
 }
 
 .agrupar {
-  max-width: 1250px;
   width: 100%;
-  margin-left: 2%;
+  height: 100%;
+  display: flex;
+  justify-content: stretch;
+  padding: 1%;
+  flex-direction: column;
 }
 
 #contenedor-principal {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
 }
 
 #barra-menu {
@@ -74,7 +81,7 @@ a:hover {
 
 #contenedor-modulo {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row-reverse;
   background-image: url(/media/granos.jpg);
   background-size: 100%, 100%;
@@ -89,10 +96,10 @@ a:hover {
 }
 
 #logo {
-  width: 40%;
-  height: 40%;
+  width: 25%;
+  height: 25%;
   margin-top: 8%;
-  margin-left: 20%;
+  margin-left: 15%;
 }
 
 #medidas {
@@ -138,9 +145,9 @@ p {
 #contenedor-articulo2 {
   border-radius: 20px;
   width: 100%;
-  margin-top: -1%;
+  margin-top: 1%;
   background-image: url(/media/menu_largo.png);
-  background-size: 100% 86%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
@@ -148,8 +155,8 @@ p {
   font-family: "Lemon", cursive;
   display: flex;
   justify-content: center;
-  margin-top: 5%;
-  margin-bottom: 1%;
+  margin-top: 1%;
+  margin-bottom: 0.5%;
   font-size: 25px;
 }
 
@@ -168,8 +175,8 @@ p {
 #container-cuadros {
   display: flex;
   justify-content: center;
-  margin-bottom: -10%;
-  margin-top: -50px;
+  margin-bottom: 1%;
+  margin-top: 1px;
   width: 100%;
   margin-left: 10%;
 }
@@ -211,8 +218,9 @@ p {
   margin: 0;
   margin-top: 1%;
   margin-left: 25%;
+  margin-bottom: -5%;
   font-family: "Titan One", cursive;
-  font-size: 30px;
+  font-size: 25px;
   color: black;
 }
 
@@ -220,14 +228,15 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
 }
 
 #beber {
-  margin-left: 5%;
+  margin-left: 4%;
 }
 
 #comer {
-  margin-right: 32%;
+  margin-right: 52%;
 }
 
 .desvanecer:hover {
@@ -394,14 +403,6 @@ p {
   border-width: 1px;
 }
 
-.ubicacion:nth-child(1) {
-}
-
-.ubicacion:nth-child(2) {
-  margin-top: 3%;
-  margin-bottom: 1%;
-}
-
 #taza-img {
   width: 20%;
   height: 20%;
@@ -435,7 +436,6 @@ h3 {
 #contenedor-contact {
   display: flex;
   width: 100%;
-  height: 100%;
   margin-left: 0.2%;
   border-radius: 10px;
   flex-direction: row-reverse;
@@ -622,13 +622,15 @@ textarea {
 #contenedor-redes {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin-left: 15%;
-  margin-bottom: 1%;
+  margin-bottom: 5%;
 }
 
 #titulo-redes {
   margin-bottom: 1%;
   margin-left: -1%;
+  font-size: 20px;
 }
 
 .redes {
@@ -639,7 +641,7 @@ textarea {
   font-size: 25px;
   color: peru;
   margin-right: 1%;
-  margin-top: 0.5%;
+  margin-top: 3%;
   margin-left: 0.5%;
   display: flex;
   flex-direction: column;
@@ -650,10 +652,20 @@ textarea {
   border-radius: 10px;
 }
 
+.red {
+  margin-left: -20%;
+  font-size: 25px;
+}
+
 #facebook,
-#twitter,
-#insta {
-  padding: 2%;
+#insta,
+#twitter {
+  margin-left: 5%;
+  padding: 1%;
+  width: 30%;
+}
+
+h1 {
 }
 
 .ubicacion:hover {
@@ -662,8 +674,21 @@ textarea {
   transform: scale(0.9);
 }
 
+.ubicacion:nth-child(2) {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1%;
+}
+
+.ubicacion:nth-child(3) {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1%;
+}
+
 .ubicacion:nth-child(4) {
-  margin-bottom: 10%;
+  display: flex;
+  justify-content: space-around;
 }
 
 #pie {
@@ -681,24 +706,27 @@ footer {
 }
 
 @media screen and (min-device-width: 350px) and (max-device-width: 800px) {
-  /* #barra-menu {
-    width: 98%;
-    margin-left: 25%;
-    font-size: 15px;
-  } */
+  #barra-menu {
+    font-size: 10px;
+  }
 
   .agrupar {
     /* max-width: 1250px; */
     width: 100%;
-    margin-left: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #contenedor-principal {
+    display: flex;
+    justify-content: ;
+    width: 100%;
   }
 
   #menu {
     width: 100%;
-    font-size: 14px;
-    /*  position: fixed;
-    bottom: 0;
-    left: 0; */
+    font-size: 11px;
   }
 
   ul {
@@ -710,13 +738,18 @@ footer {
     justify-content: space-between;
   }
 
+  #contenedor-video {
+    width: 100%;
+  }
+
   #medidas {
-    width: 80%;
+    width: 100%;
+    margin-left: -5%;
   }
 
   #logo {
-    width: 40%;
-    height: 40%;
+    width: 20%;
+    height: 20%;
   }
 
   /* #contenedor-articulo {
@@ -748,45 +781,45 @@ footer {
     border-style: double;
   } */
 
+  #titulo-menu-ub {
+    font-size: 20px;
+  }
+
+  #mosaico,
+  #mosaico2 {
+    display: none;
+  }
+
   #contenedor-contact {
     flex-direction: column-reverse;
   }
 
-  .agrupar {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 800) {
-  p {
-    font-size: 9px;
-  }
-}
-
-/* @media screen and (max-width: 1280px) {
-  p {
-    font-size: 12px;
+  .titulo-contact {
+    font-family: "Lemon", cursive;
+    font-size: 20px;
+    margin-left: 40%;
   }
 
-  #container-cuadros {
+  .redes {
+    width: 80%;
+    height: 27%;
+    background-color: wheat;
+    font-family: "Lobster", cursive;
+    font-size: 25px;
+    color: peru;
+    margin-right: 1%;
+    margin-top: 3%;
+    margin-left: 0.5%;
+    display: flex;
     flex-direction: column;
-    background-color: white;
-    margin-left: 15%;
-  }
-  #vaso {
-    width: 40%;
-    height: 30%;
-    margin-bottom: 1%;
+    justify-content: center;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
   }
 
-  #burger {
-    width: 40%;
-    height: 30%;
-    margin-bottom: 10%;
-  }
-
-  #contenedor-articulo2 {
-    background-image: none;
+  #titulo-redes {
+    margin-left: 10%;
   }
 }
- */
