@@ -1,6 +1,18 @@
 .cabecera {
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.agrupar {
+  max-width: 1250px;
+  width: 100%;
+  margin-left: 2%;
+}
+
 #contenedor-principal {
 }
 
@@ -9,17 +21,19 @@
   flex-direction: column;
   justify-content: center;
   background-image: url(/media/shopbanner3.jpg);
+  background-size: 100%, 100%;
   font-family: "Lemon", cursive;
   font-size: 20px;
   color: white;
   padding: 1%;
   border-radius: 10px;
   margin-bottom: 0.1%;
+  width: 100%;
 }
 
 ul {
   display: flex;
-  margin-left: 1%;
+  margin-left: 4%;
 }
 
 a:link {
@@ -47,6 +61,8 @@ a:hover {
   border-width: 1px;
   border-style: solid;
   margin-bottom: 0.1%;
+  width: 100%;
+  padding: 1%;
 }
 
 #bienvenidos {
@@ -58,15 +74,10 @@ a:hover {
 
 #contenedor-modulo {
   display: flex;
+  justify-content: center;
   flex-direction: row-reverse;
-  /* background: rgb(160, 78, 45);
-  background: linear-gradient(
-    315deg,
-    rgba(160, 78, 45, 1) 20%,
-    rgba(160, 132, 45, 1) 80%
-  ); */
   background-image: url(/media/granos.jpg);
-  background-size: cover;
+  background-size: 100%, 100%;
   background-repeat: no-repeat;
   margin-bottom: 0.7%;
   width: 100%;
@@ -74,11 +85,12 @@ a:hover {
 }
 
 #contenedor-video {
+  width: 100%;
 }
 
 #logo {
-  width: 60%;
-  height: 60%;
+  width: 40%;
+  height: 40%;
   margin-top: 8%;
   margin-left: 20%;
 }
@@ -100,7 +112,7 @@ a:hover {
 #contenedor-articulo {
   display: flex;
   background-image: url(/media/polvo.jpg);
-  background-size: cover;
+  background-size: 100%, 100%;
   background-repeat: no-repeat;
   border-radius: 10px;
   width: 100%;
@@ -126,9 +138,9 @@ p {
 #contenedor-articulo2 {
   border-radius: 20px;
   width: 100%;
-  margin-top: 2%;
+  margin-top: -1%;
   background-image: url(/media/menu_largo.png);
-  background-size: 100% 83%;
+  background-size: 100% 86%;
   background-repeat: no-repeat;
 }
 
@@ -136,7 +148,9 @@ p {
   font-family: "Lemon", cursive;
   display: flex;
   justify-content: center;
-  font-size: 30px;
+  margin-top: 5%;
+  margin-bottom: 1%;
+  font-size: 25px;
 }
 
 #container-modulo2 {
@@ -153,8 +167,11 @@ p {
 
 #container-cuadros {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-bottom: -10%;
+  margin-top: -50px;
+  width: 100%;
+  margin-left: 10%;
 }
 
 #modulo3 {
@@ -164,37 +181,53 @@ p {
 }
 
 #vaso {
+  width: 100%;
   height: 70%;
-  margin-left: 20%;
+  margin-left: 40%;
   border: black;
   border-style: double;
 }
 
 #burger {
   height: 70%;
-  width: 63%;
+  width: 40%;
   margin-left: 20%;
   border: black;
   border-style: double;
 }
 
-.div-imagen {
+/* .div-imagen {
   display: inline-block;
   position: relative;
-}
+} */
 
-.div-imagen > div {
-  position: absolute;
+.div-imagen > div,
+#container-titulo-cuadro {
+  /*  position: absolute; */
   top: 0;
   left: 0;
-  z-index: -2;
-  padding: 10px;
+  z-index: -1;
+  padding: 1%;
   margin: 0;
-  margin-left: 40%;
-  margin-top: 200px;
+  margin-top: 1%;
+  margin-left: 25%;
   font-family: "Titan One", cursive;
   font-size: 30px;
   color: black;
+}
+
+#container-titulo-cuadro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#beber {
+  margin-left: 5%;
+}
+
+#comer {
+  margin-right: 32%;
 }
 
 .desvanecer:hover {
@@ -326,7 +359,7 @@ p {
   display: flex;
   justify-content: center;
   font-size: 30px;
-  margin-bottom: -5%;
+  margin-bottom: -2%;
 }
 
 .contenedor-modulo-ub {
@@ -402,6 +435,7 @@ h3 {
 #contenedor-contact {
   display: flex;
   width: 100%;
+  height: 100%;
   margin-left: 0.2%;
   border-radius: 10px;
   flex-direction: row-reverse;
@@ -417,12 +451,12 @@ h3 {
 #form {
   justify-content: center;
   align-items: center;
-  width: 80%;
-  padding: 3.5%;
+  width: 100%;
+  padding: 1%;
   background-color: peru;
   border-radius: 30px;
-  margin-top: 0.1%;
-  margin-bottom: 3%;
+  margin-top: 3%;
+  margin-bottom: 1%;
   border-style: solid;
   border-width: 1px;
   margin-left: 0.5%;
@@ -445,6 +479,7 @@ h3 {
   flex-direction: column;
   width: 90%;
   margin-left: 5%;
+  margin-top: 2%;
 }
 
 input::placeholder {
@@ -479,6 +514,11 @@ textarea {
   background-color: wheat;
   color: peru;
   padding: 1%;
+  margin-top: 4%;
+}
+
+#campo_telefono {
+  margin-right: 1.5%;
 }
 
 #nombre {
@@ -566,13 +606,15 @@ textarea {
   font-size: 9px;
   font-weight: bold;
   margin-bottom: 30px;
+  margin-top: 4%;
+  margin-right: 2%;
 }
 
 #boton {
   background-color: wheat;
   width: 50%;
   margin-left: 25%;
-  margin-top: -5%;
+  margin-top: -2%;
   color: peru;
   font-family: "Lemon", cursive;
 }
@@ -581,11 +623,12 @@ textarea {
   display: flex;
   flex-direction: column;
   margin-left: 15%;
+  margin-bottom: 1%;
 }
 
 #titulo-redes {
-  margin-bottom: -6%;
-  margin-left: -4%;
+  margin-bottom: 1%;
+  margin-left: -1%;
 }
 
 .redes {
@@ -634,4 +677,116 @@ footer {
   font-family: "Lobster", cursive;
   font-size: 30px;
   color: peru;
+  margin-top: 1%;
 }
+
+@media screen and (min-device-width: 350px) and (max-device-width: 800px) {
+  /* #barra-menu {
+    width: 98%;
+    margin-left: 25%;
+    font-size: 15px;
+  } */
+
+  .agrupar {
+    /* max-width: 1250px; */
+    width: 100%;
+    margin-left: 10%;
+  }
+
+  #menu {
+    width: 100%;
+    font-size: 14px;
+    /*  position: fixed;
+    bottom: 0;
+    left: 0; */
+  }
+
+  ul {
+    margin-left: 5%;
+  }
+
+  #contenedor-modulo {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  #medidas {
+    width: 80%;
+  }
+
+  #logo {
+    width: 40%;
+    height: 40%;
+  }
+
+  /* #contenedor-articulo {
+    margin-left: 25%;
+    background-size: 100%, 100%;
+  } */
+
+  p {
+    font-family: "Homemade Apple", cursive;
+    font-size: 8px;
+  }
+
+  #titulo-acerca {
+    font-family: "Lemon", cursive;
+    font-size: 10px;
+  }
+
+  /* #vaso {
+    height: 70%;
+    margin-left: 70%;
+    border: black;
+    border-style: double;
+  }
+
+  #burger {
+    height: 70%;
+    width: 70%;
+    border: black;
+    border-style: double;
+  } */
+
+  #contenedor-contact {
+    flex-direction: column-reverse;
+  }
+
+  .agrupar {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800) {
+  p {
+    font-size: 9px;
+  }
+}
+
+/* @media screen and (max-width: 1280px) {
+  p {
+    font-size: 12px;
+  }
+
+  #container-cuadros {
+    flex-direction: column;
+    background-color: white;
+    margin-left: 15%;
+  }
+  #vaso {
+    width: 40%;
+    height: 30%;
+    margin-bottom: 1%;
+  }
+
+  #burger {
+    width: 40%;
+    height: 30%;
+    margin-bottom: 10%;
+  }
+
+  #contenedor-articulo2 {
+    background-image: none;
+  }
+}
+ */
