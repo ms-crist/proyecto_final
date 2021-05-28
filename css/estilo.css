@@ -16,6 +16,10 @@
   flex-direction: column;
 }
 
+body {
+  width: 100%;
+}
+
 #contenedor-principal {
   display: flex;
   justify-content: center;
@@ -86,9 +90,11 @@ a:hover {
   background-image: url(/media/granos.jpg);
   background-size: 100%, 100%;
   background-repeat: no-repeat;
-  margin-bottom: 0.7%;
+  margin-bottom: 2%;
   width: 100%;
+  margin-top: 1%;
   border-radius: 10px;
+  padding: 4%;
 }
 
 #contenedor-video {
@@ -96,10 +102,11 @@ a:hover {
 }
 
 #logo {
-  width: 25%;
-  height: 25%;
+  width: 50%;
+  height: 50%;
   margin-top: 8%;
   margin-left: 15%;
+  margin-bottom: 5%;
 }
 
 #medidas {
@@ -123,7 +130,14 @@ a:hover {
   background-repeat: no-repeat;
   border-radius: 10px;
   width: 100%;
-  margin-top: 1%;
+  margin-top: 2%;
+  padding: 2%;
+}
+
+#acerca-text {
+  width: 38%;
+  height: 38%;
+  margin-left: 1%;
 }
 
 p {
@@ -145,17 +159,18 @@ p {
 #contenedor-articulo2 {
   border-radius: 20px;
   width: 100%;
-  margin-top: 1%;
   background-image: url(/media/menu_largo.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  margin-top: 4%;
+  margin-bottom: 5%;
 }
 
 #titulo-menu {
   font-family: "Lemon", cursive;
   display: flex;
   justify-content: center;
-  margin-top: 1%;
+  margin-top: 0.5%;
   margin-bottom: 0.5%;
   font-size: 25px;
 }
@@ -227,16 +242,16 @@ p {
 #container-titulo-cuadro {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
 }
 
 #beber {
-  margin-left: 4%;
+  margin-right: 20%;
 }
 
 #comer {
-  margin-right: 52%;
+  margin-right: 50%;
 }
 
 .desvanecer:hover {
@@ -455,7 +470,7 @@ h3 {
   padding: 1%;
   background-color: peru;
   border-radius: 30px;
-  margin-top: 3%;
+  margin-top: 1%;
   margin-bottom: 1%;
   border-style: solid;
   border-width: 1px;
@@ -479,7 +494,7 @@ h3 {
   flex-direction: column;
   width: 90%;
   margin-left: 5%;
-  margin-top: 2%;
+  margin-top: 1%;
 }
 
 input::placeholder {
@@ -514,7 +529,7 @@ textarea {
   background-color: wheat;
   color: peru;
   padding: 1%;
-  margin-top: 4%;
+  margin-top: 1%;
 }
 
 #campo_telefono {
@@ -523,8 +538,8 @@ textarea {
 
 #nombre {
   display: flex;
-  margin-top: -6%;
-  margin-bottom: 3%;
+  margin-top: -1%;
+  margin-bottom: 0.5%;
 }
 
 #email-tel {
@@ -538,7 +553,7 @@ textarea {
 
 #direccion {
   display: flex;
-  margin-top: 1%;
+  margin-top: 0.5%;
   margin-bottom: 1%;
 }
 
@@ -547,7 +562,7 @@ textarea {
   flex-direction: row;
   font-size: 12px;
   justify-content: space-between;
-  margin-bottom: 1%;
+  margin-top: 3%;
 }
 
 #mensajes2 {
@@ -555,21 +570,21 @@ textarea {
   font-size: 12px;
   justify-content: space-between;
   margin-bottom: 1%;
-  margin-top: -3%;
+  margin-top: 0.5%;
 }
 
 #mensajes3 {
   display: flex;
   font-size: 12px;
   margin-bottom: 1%;
-  margin-top: -3%;
+  margin-top: 1%;
 }
 
 #mensaje {
   display: flex;
   font-size: 12px;
-  margin-bottom: 1%;
-  margin-top: 1%;
+  margin-bottom: 0.5%;
+  margin-top: 0.5%;
 }
 
 #mensajes-ap {
@@ -577,7 +592,7 @@ textarea {
   flex-direction: row;
   justify-content: space-between;
   font-size: 12px;
-  margin-top: -2%;
+  margin-top: 0.5%;
 }
 
 #campo_correo {
@@ -606,7 +621,7 @@ textarea {
   font-size: 9px;
   font-weight: bold;
   margin-bottom: 30px;
-  margin-top: 4%;
+  margin-top: 2%;
   margin-right: 2%;
 }
 
@@ -614,7 +629,7 @@ textarea {
   background-color: wheat;
   width: 50%;
   margin-left: 25%;
-  margin-top: -2%;
+  margin-top: -1%;
   color: peru;
   font-family: "Lemon", cursive;
 }
@@ -628,7 +643,7 @@ textarea {
 }
 
 #titulo-redes {
-  margin-bottom: 1%;
+  margin-bottom: 3%;
   margin-left: -1%;
   font-size: 20px;
 }
@@ -641,7 +656,7 @@ textarea {
   font-size: 25px;
   color: peru;
   margin-right: 1%;
-  margin-top: 3%;
+  margin-top: 1%;
   margin-left: 0.5%;
   display: flex;
   flex-direction: column;
@@ -650,6 +665,7 @@ textarea {
   border-style: solid;
   border-width: 1px;
   border-radius: 10px;
+  padding: 1.2%;
 }
 
 .red {
@@ -689,6 +705,7 @@ h1 {
 .ubicacion:nth-child(4) {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 1%;
 }
 
 #pie {
@@ -702,26 +719,99 @@ footer {
   font-family: "Lobster", cursive;
   font-size: 30px;
   color: peru;
-  margin-top: 1%;
+  margin-top: 0.5%;
 }
 
-@media screen and (min-device-width: 350px) and (max-device-width: 800px) {
+@media screen and (max-device-width: 1150px) {
+  p {
+    font-family: "Homemade Apple", cursive;
+    font-size: 17px;
+  }
+
+  #acerca-text {
+    width: 38%;
+    height: 38%;
+    margin-left: 1%;
+  }
+
+  #container-titulo-cuadro {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  #beber {
+    margin-right: 20%;
+  }
+
+  #comer {
+    margin-right: 50%;
+  }
+}
+
+@media screen and (max-device-width: 650px) {
+  p {
+    font-family: "Homemade Apple", cursive;
+    font-size: 12px;
+  }
+
+  #acerca-text {
+    width: 40%;
+    height: 40%;
+    margin-left: 1%;
+  }
+
+  #container-titulo-cuadro {
+    justify-content: center;
+    width: 100%;
+    font-size: 10px;
+  }
+
+  #beber {
+    margin-right: 15%;
+  }
+
+  #comer {
+    margin-right: 60%;
+  }
+}
+
+@media screen and (max-device-width: 600px) {
+  p {
+    font-family: "Homemade Apple", cursive;
+    font-size: 8.5px;
+  }
+
+  #acerca-text {
+    width: 55%;
+    height: 55%;
+    margin-left: 1%;
+  }
+}
+
+@media screen and (min-device-width: 350px) and (max-device-width: 900px) {
   #barra-menu {
     font-size: 10px;
+    width: 100%;
+  }
+
+  body {
+    width: 100%;
   }
 
   .agrupar {
     /* max-width: 1250px; */
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
+  }
+
+  .cabecera {
+    width: 100%;
   }
 
   #contenedor-principal {
-    display: flex;
-    justify-content: ;
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   #menu {
@@ -736,6 +826,7 @@ footer {
   #contenedor-modulo {
     flex-direction: row-reverse;
     justify-content: space-between;
+    width: 100%;
   }
 
   #contenedor-video {
@@ -744,12 +835,23 @@ footer {
 
   #medidas {
     width: 100%;
-    margin-left: -5%;
+    margin-left: -10%;
   }
 
   #logo {
-    width: 20%;
-    height: 20%;
+    width: 40%;
+    height: 40%;
+    margin-bottom: 5%;
+  }
+
+  #contenedor-articulo {
+    /* background-image: url(/media/polvo.jpg);
+    background-size: 110%, 110%;
+    background-repeat: no-repeat; */
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    margin-top: 1%;
   }
 
   /* #contenedor-articulo {
@@ -759,12 +861,18 @@ footer {
 
   p {
     font-family: "Homemade Apple", cursive;
-    font-size: 8px;
+    font-size: 12px;
   }
 
   #titulo-acerca {
     font-family: "Lemon", cursive;
     font-size: 10px;
+  }
+
+  #acerca-text {
+    width: 40%;
+    height: 40%;
+    margin-left: 1%;
   }
 
   /* #vaso {
@@ -781,6 +889,36 @@ footer {
     border-style: double;
   } */
 
+  #container-titulo-cuadro {
+    font-size: 15px;
+    justify-content: center;
+  }
+
+  #beber {
+    margin-right: 20%;
+  }
+
+  #comer {
+    margin-right: 50%;
+  }
+
+  .ubicacion {
+    width: 80%;
+    height: 25%;
+    background-color: peru;
+    font-family: "Lobster", cursive;
+    font-size: 18px;
+    color: wheat;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-left: 1%;
+    display: flex;
+    justify-content: center;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+  }
+
   #titulo-menu-ub {
     font-size: 20px;
   }
@@ -788,10 +926,12 @@ footer {
   #mosaico,
   #mosaico2 {
     display: none;
+    width: 100%;
   }
 
   #contenedor-contact {
     flex-direction: column-reverse;
+    width: 100%;
   }
 
   .titulo-contact {
@@ -801,14 +941,14 @@ footer {
   }
 
   .redes {
-    width: 80%;
+    width: 100%;
     height: 27%;
     background-color: wheat;
     font-family: "Lobster", cursive;
     font-size: 25px;
     color: peru;
     margin-right: 1%;
-    margin-top: 3%;
+    margin-top: 2%;
     margin-left: 0.5%;
     display: flex;
     flex-direction: column;
@@ -817,6 +957,14 @@ footer {
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
+  }
+
+  #facebook,
+  #insta,
+  #twitter {
+    margin-left: 5%;
+    padding: 1%;
+    width: 20%;
   }
 
   #titulo-redes {
