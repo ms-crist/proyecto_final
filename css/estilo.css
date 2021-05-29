@@ -110,10 +110,10 @@ a:hover {
 }
 
 #medidas {
-  margin-top: 8%;
+  margin-top: 2%;
   margin-left: 12%;
   width: 85%;
-  height: 80%;
+  height: 90%;
   border-radius: 20px;
   border-style: double;
   border-color: gray;
@@ -271,6 +271,7 @@ p {
   flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
+  margin-bottom: 6%;
 }
 
 #menu-comer {
@@ -278,6 +279,18 @@ p {
   background-size: cover;
   background-repeat: repeat;
   padding: 2%;
+}
+
+#taza-menu {
+  margin-bottom: -8%;
+  width: 10%;
+  margin-left: 21%;
+}
+
+#taza-menu-te {
+  width: 12%;
+  margin-left: 37%;
+  margin-bottom: -8%;
 }
 
 .contenedor-mosaico {
@@ -332,7 +345,7 @@ p {
   display: flex;
   justify-content: space-between;
   font-family: "Lemon", cursive;
-  font-size: 11px;
+  font-size: 15px;
   margin-left: 1%;
   margin-right: 1%;
 }
@@ -376,6 +389,7 @@ p {
   margin-top: 1%;
   margin-left: 20%;
   width: 80%;
+  margin-bottom: 2%;
 }
 
 #titulo-menu-ub {
@@ -563,6 +577,7 @@ textarea {
   font-size: 12px;
   justify-content: space-between;
   margin-top: 3%;
+  margin-right: 2%;
 }
 
 #mensajes2 {
@@ -670,7 +685,7 @@ textarea {
 
 .red {
   margin-left: -20%;
-  font-size: 25px;
+  font-size: 35px;
 }
 
 #facebook,
@@ -725,7 +740,7 @@ footer {
 @media screen and (max-device-width: 1150px) {
   p {
     font-family: "Homemade Apple", cursive;
-    font-size: 17px;
+    font-size: 15px;
   }
 
   #acerca-text {
@@ -746,32 +761,57 @@ footer {
   #comer {
     margin-right: 50%;
   }
+
+  h3 {
+    margin-bottom: 4%;
+    margin-right: 4%;
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-device-width: 650px) {
   p {
     font-family: "Homemade Apple", cursive;
-    font-size: 12px;
+    font-size: 8px;
   }
 
   #acerca-text {
-    width: 40%;
-    height: 40%;
+    width: 45%;
+    height: 45%;
     margin-left: 1%;
   }
 
   #container-titulo-cuadro {
     justify-content: center;
     width: 100%;
-    font-size: 10px;
+    font-size: 12px;
   }
 
-  #beber {
-    margin-right: 15%;
+  #vaso {
+    width: 100%;
+    height: 80%;
+    margin-left: 40%;
+    border: black;
+    border-style: double;
   }
 
+  #burger {
+    height: 80%;
+    width: 40%;
+    margin-left: 20%;
+    border: black;
+    border-style: double;
+  }
+
+  h3 {
+    margin-bottom: 4%;
+    margin-right: 4%;
+    font-size: 22px;
+  }
+
+  #beber,
   #comer {
-    margin-right: 60%;
+    font-size: 12px;
   }
 }
 
@@ -787,6 +827,64 @@ footer {
     margin-left: 1%;
   }
 }
+
+@media screen and (max-device-width: 516px) {
+  h3 {
+    margin-bottom: 4%;
+    margin-left: 15%;
+    font-size: 20px;
+  }
+
+  #beber,
+  #comer {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-device-width: 430px) {
+  #beber,
+  #comer {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-device-width: 640px) {
+  h3 {
+    margin-bottom: 6%;
+    margin-left: 15%;
+  }
+
+  p {
+    font-family: "Homemade Apple", cursive;
+    font-size: 8.5px;
+  }
+
+  #container-titulo-cuadro {
+    font-size: 10px;
+    justify-content: center;
+    margin-top: 1%;
+  }
+}
+
+/* @media screen and (max-device-width: 850px) {
+  .red {
+    font-size: 30px;
+    margin-right: 50%;
+  }
+
+  #facebook,
+  #insta,
+  #twitter {
+    margin-left: 5%;
+    padding: 1%;
+    width: 18%;
+  }
+
+  #titulo-redes {
+    margin-left: 4%;
+    font-size: 20px;
+  }
+} */
 
 @media screen and (min-device-width: 350px) and (max-device-width: 900px) {
   #barra-menu {
@@ -840,8 +938,8 @@ footer {
 
   #logo {
     width: 40%;
-    height: 40%;
-    margin-bottom: 5%;
+    height: 30%;
+    margin-bottom: 2%;
   }
 
   #contenedor-articulo {
@@ -861,18 +959,23 @@ footer {
 
   p {
     font-family: "Homemade Apple", cursive;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   #titulo-acerca {
     font-family: "Lemon", cursive;
-    font-size: 10px;
+    font-size: 13px;
   }
 
   #acerca-text {
     width: 40%;
     height: 40%;
     margin-left: 1%;
+    font-size: 7px;
+  }
+
+  #titulo-menu {
+    font-size: 18px;
   }
 
   /* #vaso {
@@ -903,7 +1006,7 @@ footer {
   }
 
   .ubicacion {
-    width: 80%;
+    width: 72%;
     height: 25%;
     background-color: peru;
     font-family: "Lobster", cursive;
@@ -927,6 +1030,10 @@ footer {
   #mosaico2 {
     display: none;
     width: 100%;
+  }
+
+  h3 {
+    margin-bottom: 5%;
   }
 
   #contenedor-contact {
@@ -959,15 +1066,113 @@ footer {
     border-radius: 10px;
   }
 
+  .red {
+    font-size: 35px;
+    margin-right: 50%;
+  }
+
   #facebook,
   #insta,
   #twitter {
     margin-left: 5%;
     padding: 1%;
-    width: 20%;
+    width: 18%;
   }
 
   #titulo-redes {
-    margin-left: 10%;
+    margin-left: 6%;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-device-width: 800px) {
+  p {
+    font-family: "Homemade Apple", cursive;
+    font-size: 12px;
+  }
+
+  #titulo-acerca {
+    font-family: "Lemon", cursive;
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-device-width: 700px) {
+  p {
+    font-family: "Homemade Apple", cursive;
+    font-size: 9px;
+  }
+
+  #titulo-acerca {
+    font-family: "Lemon", cursive;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-device-width: 540px) {
+  p {
+    font-family: "Homemade Apple", cursive;
+    font-size: 6.5px;
+  }
+
+  #titulo-acerca {
+    font-family: "Lemon", cursive;
+    font-size: 8px;
+  }
+}
+
+/* MENU BEBER */
+
+.titulo-menu2 {
+  font-family: "Lemon", cursive;
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  font-size: 25px;
+  margin-left: 3%;
+}
+
+.titulo-menu3 {
+  font-family: "Lemon", cursive;
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  font-size: 25px;
+  margin-left: 3%;
+}
+
+@media screen and (min-device-width: 350px) and (max-device-width: 900px) {
+  .contenedor-modulo-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 6%;
+  }
+
+  .contenedor-menu-comer {
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 90%;
+  }
+
+  .contenedor-menu {
+    flex-direction: column;
+    margin-bottom: 1%;
+  }
+
+  .titulo-menu2:nth-child(1) {
+    margin-top: -13%;
+  }
+
+  .titulo-menu2:nth-child(2) {
+    margin-bottom: -50%;
+  }
+
+  .titulo-menu3 {
+    margin-bottom: 5%;
   }
 }
