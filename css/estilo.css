@@ -65,7 +65,7 @@ a:hover {
   display: flex;
   justify-content: center;
   font-family: "Lemon", cursive;
-  font-size: 20px;
+  font-size: 25px;
   background-color: peru;
   border-radius: 10px;
   border: black;
@@ -102,21 +102,17 @@ a:hover {
 }
 
 #logo {
-  width: 50%;
-  height: 50%;
-  margin-top: 8%;
+  width: 40%;
+  height: 40%;
+  margin-top: 10%;
   margin-left: 15%;
-  margin-bottom: 5%;
+  margin-bottom: 20%;
 }
 
 #medidas {
-  margin-top: 2%;
-  margin-left: 12%;
-  width: 85%;
-  height: 90%;
-  border-radius: 20px;
-  border-style: double;
-  border-color: gray;
+  margin-top: -3%;
+  margin-left: -15%;
+  width: 120%;
 }
 
 #acerca-txt {
@@ -148,6 +144,8 @@ p {
 #titulo-acerca {
   font-family: "Lemon", cursive;
   font-size: 20px;
+  margin-left: 5%;
+  margin-bottom: 2%;
 }
 
 #acerca-text {
@@ -271,7 +269,7 @@ p {
   flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
-  margin-bottom: 6%;
+  margin-bottom: 10%;
 }
 
 #menu-comer {
@@ -352,7 +350,7 @@ p {
   display: flex;
   justify-content: space-between;
   font-family: "Lemon", cursive;
-  font-size: 15px;
+  font-size: 12px;
   margin-left: 1%;
   margin-right: 1%;
 }
@@ -386,7 +384,7 @@ p {
   background-color: antiquewhite;
   width: 100%;
   border-radius: 20px;
-  margin-top: 4%;
+  margin-top: 5%;
 }
 
 .contenedor-ubicacion {
@@ -482,6 +480,7 @@ h3 {
   font-family: "Lemon", cursive;
   font-size: 30px;
   margin-left: 40%;
+  margin-top: 1%;
 }
 
 #form {
@@ -647,6 +646,10 @@ textarea {
   margin-right: 2%;
 }
 
+h4 {
+  font-size: 14px;
+}
+
 #boton {
   background-color: wheat;
   width: 50%;
@@ -692,7 +695,7 @@ textarea {
 
 .red {
   margin-left: -20%;
-  font-size: 35px;
+  font-size: 33px;
 }
 
 #facebook,
@@ -700,10 +703,11 @@ textarea {
 #twitter {
   margin-left: 5%;
   padding: 1%;
-  width: 30%;
+  width: 25%;
 }
 
 h1 {
+  font-size: 28px;
 }
 
 .ubicacion:hover {
@@ -744,6 +748,12 @@ footer {
   margin-top: 0.5%;
 }
 
+@media screen and (max-device-width: 1300px) {
+  #medidas {
+    width: 120%;
+  }
+}
+
 @media screen and (max-device-width: 1150px) {
   p {
     font-family: "Homemade Apple", cursive;
@@ -769,10 +779,20 @@ footer {
     margin-right: 50%;
   }
 
+  #medidas {
+    width: 140%;
+    margin-left: -35%;
+  }
+
   h3 {
     margin-bottom: 4%;
     margin-right: 4%;
     font-size: 24px;
+  }
+
+  #logo {
+    margin-top: 10%;
+    margin-left: 10%;
   }
 }
 
@@ -833,6 +853,10 @@ footer {
     height: 55%;
     margin-left: 1%;
   }
+
+  #medidas {
+    width: 200%;
+  }
 }
 
 @media screen and (max-device-width: 516px) {
@@ -870,6 +894,11 @@ footer {
     font-size: 10px;
     justify-content: center;
     margin-top: 1%;
+  }
+
+  #titulo-redes {
+    margin-left: 1%;
+    font-size: 20px;
   }
 }
 
@@ -934,19 +963,15 @@ footer {
     width: 100%;
   }
 
-  #contenedor-video {
-    width: 100%;
-  }
-
   #medidas {
-    width: 100%;
-    margin-left: -10%;
+    width: 140%;
+    margin-left: -40%;
   }
 
   #logo {
-    width: 40%;
+    width: 35%;
     height: 30%;
-    margin-bottom: 2%;
+    margin-top: 4%;
   }
 
   #contenedor-articulo {
@@ -1029,10 +1054,6 @@ footer {
     border-width: 1px;
   }
 
-  #titulo-menu-ub {
-    font-size: 20px;
-  }
-
   #mosaico,
   #mosaico2 {
     display: none;
@@ -1052,6 +1073,10 @@ footer {
     font-family: "Lemon", cursive;
     font-size: 20px;
     margin-left: 40%;
+  }
+
+  #contenedor-redes {
+    margin-left: 25%;
   }
 
   .redes {
@@ -1087,8 +1112,23 @@ footer {
   }
 
   #titulo-redes {
-    margin-left: 6%;
+    margin-left: -1%;
     font-size: 20px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+
+  footer {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 10px;
   }
 }
 
@@ -1102,6 +1142,26 @@ footer {
     font-family: "Lemon", cursive;
     font-size: 11px;
   }
+
+  #titulo-redes {
+    margin-left: 1%;
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  #medidas {
+    width: 160%;
+    margin-left: -60%;
+  }
+
+  #logo {
+    width: 35%;
+    height: 30%;
+    margin-top: 4%;
+  }
 }
 
 @media screen and (max-device-width: 700px) {
@@ -1114,6 +1174,22 @@ footer {
     font-family: "Lemon", cursive;
     font-size: 10px;
   }
+
+  #medidas {
+    width: 180%;
+    margin-left: -80%;
+  }
+
+  #logo {
+    width: 32%;
+    height: 30%;
+    margin-top: 4%;
+  }
+
+  #titulo-redes {
+    margin-left: -1%;
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-device-width: 540px) {
@@ -1122,9 +1198,8 @@ footer {
     font-size: 6.5px;
   }
 
-  #titulo-acerca {
-    font-family: "Lemon", cursive;
-    font-size: 8px;
+  h1 {
+    font-size: 15px;
   }
 }
 
@@ -1172,6 +1247,7 @@ footer {
     flex-direction: column;
     margin-bottom: 5%;
     margin-top: -5%;
+    font-size: 11px;
   }
 
   .titulo-menu2:nth-child(1) {
@@ -1189,7 +1265,20 @@ footer {
   }
 
   h1 {
-    font-size: 20px;
+    font-size: 28px;
+  }
+
+  #titulo-redes {
+    margin-left: 6%;
+  }
+
+  #boton {
+    background-color: wheat;
+    width: 35%;
+    margin-left: 35%;
+    margin-top: -1%;
+    color: peru;
+    font-family: "Lemon", cursive;
   }
 }
 
@@ -1201,6 +1290,18 @@ footer {
   .titulo-menu2:nth-child(1) {
     margin-top: -17%;
   }
+
+  #titulo-redes {
+    margin-left: 5%;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  .red {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-device-width: 700px) {
@@ -1211,11 +1312,45 @@ footer {
   .titulo-menu2:nth-child(1) {
     margin-top: -17%;
   }
+
+  #titulo-redes {
+    margin-left: 6%;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .red {
+    font-size: 26px;
+  }
+
+  #titulo {
+    font-size: 18px;
+  }
+
+  #campo_nombre,
+  #campo_direccion,
+  #campo_texto,
+  #campo_mensaje,
+  #campo_correo,
+  #campo_telefono {
+    border-width: 3px;
+    border-color: wheat;
+    border-radius: 5px;
+    width: 98%;
+    font-family: "Lemon", cursive;
+    font-size: 13px;
+    background-color: wheat;
+    color: peru;
+    padding: 1%;
+    margin-top: 1%;
+  }
 }
 
 @media screen and (max-device-width: 600px) {
   .titulo-menu2:nth-child(2) {
-    margin-bottom: -70%;
+    margin-bottom: -75%;
     font-size: 22px;
   }
 
@@ -1224,28 +1359,164 @@ footer {
     font-size: 22px;
   }
 
+  h2 {
+    font-size: 20px;
+  }
+
+  .red {
+    font-size: 23px;
+  }
+
+  #medidas {
+    width: 180%;
+    margin-left: -80%;
+  }
+
+  #titulo-redes {
+    margin-right: 30%;
+  }
+
+  #campo_nombre,
+  #campo_direccion,
+  #campo_texto,
+  #campo_mensaje,
+  #campo_correo,
+  #campo_telefono {
+    border-width: 3px;
+    border-color: wheat;
+    border-radius: 5px;
+    width: 98%;
+    font-family: "Lemon", cursive;
+    font-size: 14px;
+    background-color: wheat;
+    color: peru;
+    padding: 1%;
+    margin-top: 1%;
+  }
+
+  #titulo {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
   h1 {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
 @media screen and (max-device-width: 500px) {
   .titulo-menu2:nth-child(2) {
-    margin-bottom: -71%;
-    font-size: 18px;
+    margin-bottom: -86%;
+    font-size: 16px;
   }
 
   .titulo-menu2:nth-child(1) {
-    margin-top: -15%;
-    font-size: 18px;
+    margin-top: -20%;
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 10px;
   }
 
   .comida {
-    font-size: 12px;
+    font-size: 10px;
+  }
+
+  .contenedor-menu-comer {
+    font-size: 10px;
   }
 
   h1 {
+    font-size: 20px;
+  }
+
+  .red {
+    font-size: 23px;
+  }
+
+  #titulo-redes {
+    margin-left: 12%;
+  }
+
+  #medidas {
+    width: 200%;
+    margin-left: -110%;
+  }
+
+  #logo {
+    width: 28%;
+  }
+
+  #titulo {
+    font-size: 14px;
+  }
+
+  #campo_nombre,
+  #campo_direccion,
+  #campo_texto,
+  #campo_mensaje,
+  #campo_correo,
+  #campo_telefono {
+    border-width: 3px;
+    border-color: wheat;
+    border-radius: 5px;
+    width: 98%;
+    font-family: "Lemon", cursive;
+    font-size: 12px;
+    background-color: wheat;
+    color: peru;
+    padding: 1%;
+    margin-top: 1%;
+  }
+
+  .comida2 {
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  .red {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 17px;
+  }
+
+  footer {
+    font-size: 20px;
+  }
+
+  #boton {
+    background-color: wheat;
+    width: 25%;
+    margin-left: 40%;
+    margin-top: -1%;
+    color: peru;
+    font-family: "Lemon", cursive;
     font-size: 15px;
+  }
+}
+
+@media screen and (max-device-width: 400px) {
+  .titulo-menu2:nth-child(2) {
+    margin-bottom: -98%;
+    font-size: 16px;
+  }
+
+  .titulo-menu2:nth-child(1) {
+    margin-top: -25%;
+    font-size: 16px;
   }
 }
 
@@ -1264,8 +1535,12 @@ footer {
   font-family: "Lemon", cursive;
   display: flex;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 7%;
   margin-bottom: 1%;
   font-size: 25px;
   margin-left: 3%;
+}
+
+h2 {
+  font-size: 20px;
 }
