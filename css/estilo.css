@@ -158,17 +158,17 @@ p {
   border-radius: 20px;
   width: 100%;
   background-image: url(/media/menu_largo.png);
-  background-size: 100% 100%;
+  background-size: 100% 101%;
   background-repeat: no-repeat;
-  margin-top: 4%;
-  margin-bottom: 5%;
+  margin-top: 3%;
+  margin-bottom: 0.5%;
 }
 
 #titulo-menu {
   font-family: "Lemon", cursive;
   display: flex;
   justify-content: center;
-  margin-top: 0.5%;
+  margin-top: 0.8%;
   margin-bottom: 0.5%;
   font-size: 25px;
 }
@@ -246,10 +246,12 @@ p {
 
 #beber {
   margin-right: 20%;
+  margin-top: 7%;
 }
 
 #comer {
   margin-right: 50%;
+  margin-top: 7%;
 }
 
 .desvanecer:hover {
@@ -355,10 +357,8 @@ p {
   margin-right: 1%;
 }
 
-.tipo-cafe {
-}
-
-.precio {
+h5 {
+  font-size: 22px;
 }
 
 #contenedor-titulo {
@@ -441,7 +441,7 @@ p {
   width: 20%;
   height: 20%;
   margin-left: -20%;
-  margin-top: -10%;
+  margin-top: -5%;
   margin-bottom: -10%;
 }
 
@@ -479,7 +479,7 @@ h3 {
 .titulo-contact {
   font-family: "Lemon", cursive;
   font-size: 30px;
-  margin-left: 40%;
+  margin-left: 45%;
   margin-top: 1%;
 }
 
@@ -780,8 +780,8 @@ footer {
   }
 
   #medidas {
-    width: 140%;
-    margin-left: -35%;
+    width: 130%;
+    margin-left: -25%;
   }
 
   h3 {
@@ -792,7 +792,36 @@ footer {
 
   #logo {
     margin-top: 10%;
-    margin-left: 10%;
+    margin-left: 15%;
+    width: 35%;
+  }
+
+  #titulo-redes {
+    margin-left: 4%;
+    margin-right: 10%;
+    font-size: 18px;
+  }
+
+  #campo_nombre,
+  #campo_direccion,
+  #campo_texto,
+  #campo_mensaje,
+  #campo_correo,
+  #campo_telefono {
+    border-width: 3px;
+    border-color: wheat;
+    border-radius: 5px;
+    width: 98%;
+    font-family: "Lemon", cursive;
+    font-size: 15px;
+    background-color: wheat;
+    color: peru;
+    padding: 1%;
+    margin-top: 1%;
+  }
+
+  #titulo {
+    font-size: 15px;
   }
 }
 
@@ -855,7 +884,7 @@ footer {
   }
 
   #medidas {
-    width: 200%;
+    width: 180%;
   }
 }
 
@@ -1116,6 +1145,10 @@ footer {
     font-size: 20px;
   }
 
+  #titulo {
+    font-size: 22px;
+  }
+
   h1 {
     font-size: 35px;
   }
@@ -1129,6 +1162,10 @@ footer {
 
   h2 {
     font-size: 10px;
+  }
+
+  h5 {
+    font-size: 22px;
   }
 }
 
@@ -1176,18 +1213,23 @@ footer {
   }
 
   #medidas {
-    width: 180%;
-    margin-left: -80%;
+    width: 170%;
+    margin-left: -65%;
   }
 
   #logo {
-    width: 32%;
+    width: 28%;
     height: 30%;
-    margin-top: 4%;
+    margin-top: 8%;
+    margin-left: 15%;
   }
 
   #titulo-redes {
     margin-left: -1%;
+    font-size: 20px;
+  }
+
+  h5 {
     font-size: 20px;
   }
 }
@@ -1346,11 +1388,15 @@ footer {
     padding: 1%;
     margin-top: 1%;
   }
+
+  h4 {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-device-width: 600px) {
   .titulo-menu2:nth-child(2) {
-    margin-bottom: -75%;
+    margin-bottom: -70%;
     font-size: 22px;
   }
 
@@ -1399,7 +1445,7 @@ footer {
   }
 
   h4 {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   h3 {
@@ -1409,11 +1455,15 @@ footer {
   h1 {
     font-size: 20px;
   }
+
+  h5 {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-device-width: 500px) {
   .titulo-menu2:nth-child(2) {
-    margin-bottom: -86%;
+    margin-bottom: -75%;
     font-size: 16px;
   }
 
@@ -1448,7 +1498,8 @@ footer {
 
   #medidas {
     width: 200%;
-    margin-left: -110%;
+    margin-left: -100%;
+    margin-top: 5%;
   }
 
   #logo {
@@ -1493,6 +1544,10 @@ footer {
     font-size: 17px;
   }
 
+  h4 {
+    font-size: 11px;
+  }
+
   footer {
     font-size: 20px;
   }
@@ -1506,16 +1561,20 @@ footer {
     font-family: "Lemon", cursive;
     font-size: 15px;
   }
+
+  h5 {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-device-width: 400px) {
   .titulo-menu2:nth-child(2) {
-    margin-bottom: -98%;
+    margin-bottom: -85%;
     font-size: 16px;
   }
 
   .titulo-menu2:nth-child(1) {
-    margin-top: -25%;
+    margin-top: -20%;
     font-size: 16px;
   }
 }
