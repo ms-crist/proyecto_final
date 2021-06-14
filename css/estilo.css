@@ -1,6 +1,3 @@
-.cabecera {
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -26,6 +23,8 @@ body {
   flex-direction: column;
   width: 100%;
 }
+
+/* botonera, banner y cabecera */
 
 #barra-menu {
   display: flex;
@@ -83,6 +82,8 @@ a:hover {
   margin-top: -1%;
 }
 
+/* modulo logo y video */
+
 #contenedor-modulo {
   display: flex;
   justify-content: space-around;
@@ -114,6 +115,8 @@ a:hover {
   margin-left: -15%;
   width: 120%;
 }
+
+/* seccion acerca */
 
 #acerca-txt {
   display: flex;
@@ -154,6 +157,8 @@ p {
   margin-left: 5%;
 }
 
+/* sección vínculos menú de beber y comer */
+
 #contenedor-articulo2 {
   border-radius: 20px;
   width: 100%;
@@ -182,9 +187,6 @@ p {
   display: flex;
 }
 
-#modulo2 {
-}
-
 #container-cuadros {
   display: flex;
   justify-content: center;
@@ -192,12 +194,6 @@ p {
   margin-top: 1px;
   width: 100%;
   margin-left: 10%;
-}
-
-#modulo3 {
-}
-
-#modulo4 {
 }
 
 #vaso {
@@ -216,14 +212,8 @@ p {
   border-style: double;
 }
 
-/* .div-imagen {
-  display: inline-block;
-  position: relative;
-} */
-
 .div-imagen > div,
 #container-titulo-cuadro {
-  /*  position: absolute; */
   top: 0;
   left: 0;
   z-index: -1;
@@ -263,42 +253,7 @@ p {
   transition: opacity 500ms;
 }
 
-#modulo4 {
-}
-
-.contenedor-modulo-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100%;
-  margin-bottom: 10%;
-}
-
-#menu-comer {
-  background-image: url(/media/bg-textura.png);
-  background-size: cover;
-  background-repeat: repeat;
-  padding: 2%;
-}
-
-#taza-menu {
-  margin-bottom: -8%;
-  width: 8%;
-  margin-left: 22%;
-}
-
-#taza-menu-te {
-  width: 8%;
-  margin-left: 39%;
-  margin-bottom: -8%;
-}
-
-#taza-menu-te2 {
-  width: 8%;
-  margin-left: 23%;
-  margin-right: 16%;
-  margin-bottom: -8%;
-}
+/* módulo ubicación y locales */
 
 .contenedor-mosaico {
   display: flex;
@@ -319,65 +274,6 @@ p {
   margin-top: 2%;
   margin-left: 5%;
   margin-bottom: 2%;
-}
-
-.contenedor-menu-comer {
-  background-image: url(/media/bg-textura.png);
-  background-size: cover;
-  background-repeat: repeat;
-  border-style: double;
-  border-color: black;
-  width: 40%;
-}
-
-.titulo-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-family: "Lemon", cursive;
-  font-size: 25px;
-  margin-top: -2%;
-  margin-bottom: -2%;
-}
-
-.contenedor-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-bottom: 0.5%;
-  margin-right: 5%;
-}
-
-.comida {
-  display: flex;
-  justify-content: space-between;
-  font-family: "Lemon", cursive;
-  font-size: 12px;
-  margin-left: 1%;
-  margin-right: 1%;
-}
-
-h5 {
-  font-size: 22px;
-}
-
-#contenedor-titulo {
-  display: flex;
-  justify-content: center;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  background-color: antiquewhite;
-}
-
-#contenedor-titulo:nth-child(1) {
-}
-
-.titulo-menu {
-  margin-left: 8%;
-}
-
-.titulo-menu:nth-child(3) {
-  margin-top: -10%;
 }
 
 #contenedor-articulo3 {
@@ -463,9 +359,7 @@ h3 {
   flex-direction: row;
 }
 
-.horario {
-  font-family: "Lemon", cursive;
-}
+/* formulario de contacto */
 
 #contenedor-contact {
   display: flex;
@@ -659,6 +553,8 @@ h4 {
   font-family: "Lemon", cursive;
 }
 
+/* modulo redes sociales */
+
 #contenedor-redes {
   display: flex;
   flex-direction: column;
@@ -734,6 +630,8 @@ h1 {
   margin-bottom: 1%;
 }
 
+/* pie de pagina */
+
 #pie {
   display: flex;
   justify-content: center;
@@ -746,6 +644,120 @@ footer {
   font-size: 30px;
   color: peru;
   margin-top: 0.5%;
+}
+
+/* MENU BEBER Y TOMAR */
+
+.titulo-menu2 {
+  font-family: "Lemon", cursive;
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  font-size: 25px;
+  margin-left: 3%;
+}
+
+.contenedor-menu {
+  margin-top: -2%;
+}
+
+.titulo-menu3 {
+  font-family: "Lemon", cursive;
+  display: flex;
+  margin-bottom: 1%;
+  font-size: 25px;
+  margin-left: 3%;
+}
+
+.contenedor-menu-comer {
+  background-image: url(/media/bg-textura.png);
+  background-size: cover;
+  background-repeat: repeat;
+  border-style: double;
+  border-color: black;
+  width: 40%;
+}
+
+.titulo-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Lemon", cursive;
+  font-size: 25px;
+  margin-top: -2%;
+  margin-bottom: -2%;
+}
+
+.contenedor-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 0.5%;
+  margin-right: 5%;
+}
+
+.comida {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Lemon", cursive;
+  font-size: 12px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+#contenedor-titulo {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color: antiquewhite;
+}
+
+.titulo-menu {
+  margin-left: 8%;
+}
+
+.titulo-menu:nth-child(3) {
+  margin-top: -10%;
+}
+
+.contenedor-modulo-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 10%;
+}
+
+#menu-comer {
+  background-image: url(/media/bg-textura.png);
+  background-size: cover;
+  background-repeat: repeat;
+  padding: 2%;
+}
+
+#taza-menu {
+  margin-bottom: -8%;
+  width: 8%;
+  margin-left: 22%;
+}
+
+#taza-menu-te {
+  width: 8%;
+  margin-left: 39%;
+  margin-bottom: -8%;
+}
+
+#taza-menu-te2 {
+  width: 8%;
+  margin-left: 23%;
+  margin-right: 16%;
+  margin-bottom: -8%;
 }
 
 @media screen and (max-device-width: 1300px) {
@@ -931,26 +943,6 @@ footer {
   }
 }
 
-/* @media screen and (max-device-width: 850px) {
-  .red {
-    font-size: 30px;
-    margin-right: 50%;
-  }
-
-  #facebook,
-  #insta,
-  #twitter {
-    margin-left: 5%;
-    padding: 1%;
-    width: 18%;
-  }
-
-  #titulo-redes {
-    margin-left: 4%;
-    font-size: 20px;
-  }
-} */
-
 @media screen and (min-device-width: 350px) and (max-device-width: 900px) {
   #barra-menu {
     font-size: 10px;
@@ -962,7 +954,6 @@ footer {
   }
 
   .agrupar {
-    /* max-width: 1250px; */
     width: 100%;
     height: 100%;
   }
@@ -1004,19 +995,11 @@ footer {
   }
 
   #contenedor-articulo {
-    /* background-image: url(/media/polvo.jpg);
-    background-size: 110%, 110%;
-    background-repeat: no-repeat; */
     border-radius: 10px;
     width: 100%;
     height: 100%;
     margin-top: 1%;
   }
-
-  /* #contenedor-articulo {
-    margin-left: 25%;
-    background-size: 100%, 100%;
-  } */
 
   p {
     font-family: "Homemade Apple", cursive;
@@ -1038,20 +1021,6 @@ footer {
   #titulo-menu {
     font-size: 18px;
   }
-
-  /* #vaso {
-    height: 70%;
-    margin-left: 70%;
-    border: black;
-    border-style: double;
-  }
-
-  #burger {
-    height: 70%;
-    width: 70%;
-    border: black;
-    border-style: double;
-  } */
 
   #container-titulo-cuadro {
     font-size: 15px;
@@ -1245,29 +1214,7 @@ footer {
   }
 }
 
-/* MENU BEBER */
-
-.titulo-menu2 {
-  font-family: "Lemon", cursive;
-  display: flex;
-  justify-content: center;
-  margin-top: 2%;
-  margin-bottom: 1%;
-  font-size: 25px;
-  margin-left: 3%;
-}
-
-.contenedor-menu {
-  margin-top: -2%;
-}
-
-.titulo-menu3 {
-  font-family: "Lemon", cursive;
-  display: flex;
-  margin-bottom: 1%;
-  font-size: 25px;
-  margin-left: 3%;
-}
+/* menu beber */
 
 @media screen and (min-device-width: 350px) and (max-device-width: 900px) {
   .contenedor-modulo-menu {
