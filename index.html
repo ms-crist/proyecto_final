@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenido a Matius Coffee</title>
-    <link rel="stylesheet" href="/css/estilo.css">
-    <link rel="stylesheet" href="/css/formulario.css">
-    <script src="/js/objeto.js"></script>
+    <title>Bienvenido a Coffee</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <script src="js/objeto.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 
 <body>
@@ -27,15 +28,15 @@
             <!-- banner y cabecera -->
             <div id="barra-menu">
                 <div id="bienvenidos">
-                    <h1>Matiu's Coffee</h1>
+                    
                 </div>
             </div>
         </header>
         <nav id="menu">
             <!-- menu de navegacion -->
             <ul><a href="#barra-menu">Inicio</a></ul>
-            <ul><a href="#acerca">Acerca de</a></ul>
-            <ul><a href="#titulo-menu">Menú</a></ul>
+            <ul><a href="#contenedor-articulo">Acerca de</a></ul>
+            <ul><a href="#contenedor-articulo2">Menú</a></ul>
             <ul><a href="#contenedor-articulo3">Locales</a></ul>
             <ul><a href="#articulo-contacto">Contacto</a></ul>
         </nav>
@@ -43,12 +44,14 @@
             <div id="contenedor-modulo">
                 <!-- modulo logo y video -->
                 <div id="contenedor-video">
-                    <video id="medidas" src="/media/taza.mp4" controls autoplay muted loop></video>
+                    <video id="medidas" src="media/taza.mp4" controls autoplay muted loop></video>
                 </div>
                 <div id="contenedor-logo">
                     <figure>
-                        <img id="logo" src="/media/matiuslogo2.png" alt="">
+                        <img id="logo" src="media/coffee.png" alt="">
                     </figure>
+                <div id="titulo-logo"> <h1>Coffee</h1></div>
+                   
                 </div>
             </div>
             <article id="contenedor-articulo">
@@ -60,7 +63,7 @@
                     </div>
                     <div id="acerca-text">
 
-                        <p>Matiu’s Coffee se funda en 1995, abriendo su primer local en Santiago Centro. <br>
+                        <p>Coffee se funda en 1995, abriendo su primer local. <br>
                             <br>
                             Nuestro propósito es brindar la mejor experiencia en café. Para ello nos preocupamos de
                             seleccionar
@@ -68,7 +71,7 @@
                             <br>
                             El grano de café que servimos lo buscamos directamente en la fuente y lo importamos desde
                             los
-                            mejores productores de café ubicados en Colombia y Costa Rica.
+                            mejores productores de café.
                         </p>
                     </div>
 
@@ -93,11 +96,11 @@
                 </div>
                 <div id="container-cuadros">
                     <div class="div-imagen">
-                        <a href="menu_beber.html"><img class="desvanecer" id="vaso" src="/media/vaso.jpg" /></a>
+                        <a href="menu_beber.html"><img class="desvanecer" id="vaso" src="media/vaso.jpg" /></a>
                     </div>
                     <div class="div-imagen">
 
-                        <a href="menu_comer.html"><img class="desvanecer" id="burger" src="/media/burger.jpg" /></a>
+                        <a href="menu_comer.html"><img class="desvanecer" id="burger" src="media/burger.jpg" /></a>
                     </div>
                 </div>
 
@@ -113,21 +116,21 @@
                         </div>
                     </div>
                     <div class="contenedor-ubicacion">
-                        <img id="taza-img" src="/media/taza.png" alt="">
+                        <img id="taza-img" src="media/taza.png" alt="">
                         <div class="ubicacion">
-                            <img id="mosaico" src="/media/mosaico.jpg" alt="">
+                            <img id="mosaico" src="media/mosaico.jpg" alt="">
                             <h3> <br><a href="#">Sucursal 1</a><br>
-                                Providencia 5678, Providencia, Santiago <br>
+                                <br>
                             </h3>
 
                         </div>
                         <div class="ubicacion">
-                            <img id="mosaico2" src="/media/mosaico2.jpg" alt="">
+                            <img id="mosaico2" src="media/mosaico2.jpg" alt="">
                             <h3><br><a href="#">Sucursal 2 </a><br>
-                                Apoquindo 6170, Las Condes, Santiago
+                                
                             </h3>
                         </div>
-                        <img id="pan" src="/media/sandwich_web.png" alt="">
+                        <img id="pan" src="media/sandwich_web.png" alt="">
                     </div>
                     <div class="contenedor-redes">
 
@@ -188,19 +191,19 @@
                                 <h1>Siguenos en nuestras redes sociales</h1>
                             </div>
                             <div class="ubicacion">
-                                <img id="facebook" src="/media/face.png" alt="">
+                                <i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i>
                                 <a href="#">
                                     <h1 class="red">Facebook</h1>
                                 </a>
                             </div>
                             <div class="ubicacion">
-                                <img id="twitter" src="/media/twitter.png" alt="">
+                                <i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i>
                                 <a href="#">
                                     <h1 class="red">&nbsp&nbspTwitter&nbsp</h1>
                                 </a>
                             </div>
                             <div class="ubicacion">
-                                <img id="insta" src="/media/insta.png" alt="">
+                                <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
                                 <a href="#">
                                     <h1 class="red">Instagram</h1>
                                 </a>
